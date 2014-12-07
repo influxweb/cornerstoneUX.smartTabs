@@ -28,6 +28,91 @@
 				<p>smartTabs is a jQuery plug-in you can use to add tabbed, accordion, and/or responsive tabbed/accordion content sections to your site. This is the first building block to be added to the <a href="https://github.com/influxweb/cornerstoneUX" target="_blank" title="cornerstoneUX Development Architecture">cornerstoneUX</a> architecture. Unlike add-ons for other frameworks and architectures, smartTabs can be used on any site by adding the style-sheets provided with the download. There is no limit to the number of content sections you can call on a page.</p>
 				<h3>The Why?</h3>
 				<p>After searching for a good solution to turn tabbed content into usable, accordion content within a responsive site, I decided it was time to try my hand at creating my own version. Taking my lead from mobile-first as well as regression for no CSS or JavaScript, I built smartTabs around using definition lists for the HTML structure. The style-sheet provides some basic formatting for the tabs and accordion structures. All the of the heavy-lifting is provided by the plug-in. It structures and provides the necessary navigation as well as the responsive conversion between tabs and accordions.</p>
+				<h3>Plug-In Options</h3>
+				<table class="table-border table-stripe">
+					<thead>
+						<tr>
+							<th>Property</th>
+							<th>Default</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>activeClass</td>
+							<td>'current'</td>
+							<td>This is the class applied to the currently active tab or accordion.</td>
+						</tr>
+						<tr>
+							<td>breakpoint</td>
+							<td>768</td>
+							<td>This is the breakpoint at which you would like the tabs to convert to accordions when using them in a responsive environment.</td>
+						</tr>
+						<tr>
+							<td>breakTrigger</td>
+							<td>$(window)</td>
+							<td>A selector or DOM element that you would like to test the "outerWidth" of against the "breakpoint" specified.</td>
+						</tr>
+						<tr>
+							<td>contentHeight</td>
+							<td>'fixed'</td>
+							<td>This is how you would like to content height to behave. Choose from <code>'fixed'</code> to have the content fixed to the height of the largest block or <code>'auto'</code> to have the content automatically adjust to the height of each block.</td>
+						</tr>
+						<tr>
+							<td>layout</td>
+							<td>'auto'</td>
+							<td>The type of layout you would like your content to have. Choose from <code>'tabs'</code> to have a fixed tab layout, <code>'accordion'</code> to have a fixed accordion layout, or <code>'auto'</code> to have a responsive tab to accordion layout.</td>
+						</tr>
+					</tbody>
+				</table>
+				<h3>Examples</h3>
+				<p>Static Tabs</p>
+				<dl id="js-smart-tabs--tabs" class="smart-tabs">
+					<dt><a href="#">Tab One</a></dt>
+					<dd>
+						Knight Rider, a shadowy flight into the dangerous world of a man who does not exist. Michael Knight, a young loner on a crusade to champion the cause of the innocent, the helpless in a world of criminals who operate above the law.
+					</dd>
+					<dt><a href="#">Tab Two</a></dt>
+					<dd>
+						Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.
+					</dd>
+					<dt><a href="#">Tab Three</a></dt>
+					<dd>
+						Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!
+					</dd>
+				</dl>
+				<hr noshade />
+				<p>Static Accordion</p>
+				<dl id="js-smart-tabs--accordion" class="smart-tabs">
+					<dt><a href="#">Tab One</a></dt>
+					<dd>
+						Knight Rider, a shadowy flight into the dangerous world of a man who does not exist. Michael Knight, a young loner on a crusade to champion the cause of the innocent, the helpless in a world of criminals who operate above the law.
+					</dd>
+					<dt><a href="#">Tab Two</a></dt>
+					<dd>
+						Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.
+					</dd>
+					<dt><a href="#">Tab Three</a></dt>
+					<dd>
+						Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!
+					</dd>
+				</dl>
+				<hr noshade />
+				<p>Responsive Tabs -> Accordion</p>
+				<dl id="js-smart-tabs" class="smart-tabs">
+					<dt><a href="#">Tab One</a></dt>
+					<dd>
+						Knight Rider, a shadowy flight into the dangerous world of a man who does not exist. Michael Knight, a young loner on a crusade to champion the cause of the innocent, the helpless in a world of criminals who operate above the law.
+					</dd>
+					<dt><a href="#">Tab Two</a></dt>
+					<dd>
+						Ten years ago a crack commando unit was sent to prison by a military court for a crime they didn't commit. These men promptly escaped from a maximum security stockade to the Los Angeles underground. Today, still wanted by the government, they survive as soldiers of fortune. If you have a problem and no one else can help, and if you can find them, maybe you can hire the A-team.
+					</dd>
+					<dt><a href="#">Tab Three</a></dt>
+					<dd>
+						Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!
+					</dd>
+				</dl>
 			</section>
 		</div>
 		<!-- FOOTER	-->
