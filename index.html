@@ -65,6 +65,8 @@
 						</tr>
 					</tbody>
 				</table>
+				<h3>Installation</h3>
+				<p>To install smartTabs is real easy. Just add a link to the <code>smartTabs.css</code> file in the <code>HEAD</code> of your page. Add a link to the <code>jquery.smartTabs.js</code> file below your link to jQuery, and add the initialization string to your page or external JavaScript file. If you are not using the cornerstoneUX architecture, you may want to use the alternate <code>smartTabs--alt.css</code> file which includes some basic structure resets.</p>
 				<h3>Examples</h3>
 				<p>Static Tabs</p>
 				<dl id="js-smart-tabs--tabs" class="smart-tabs">
@@ -81,6 +83,14 @@
 						Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!
 					</dd>
 				</dl>
+				<blockquote>
+					<p>Initialization</p>
+					<pre>
+						$('#js-smart-tabs--tabs').smartTabs({
+							layout: 'tabs'
+						});
+					</pre>
+				</blockquote>
 				<hr noshade />
 				<p>Static Accordion</p>
 				<dl id="js-smart-tabs--accordion" class="smart-tabs">
@@ -97,6 +107,14 @@
 						Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!
 					</dd>
 				</dl>
+				<blockquote>
+					<p>Initialization</p>
+					<pre>
+						$('#js-smart-tabs--accordion').smartTabs({
+							layout: 'accordion'
+						});
+					</pre>
+				</blockquote>
 				<hr noshade />
 				<p>Responsive Tabs -> Accordion</p>
 				<dl id="js-smart-tabs" class="smart-tabs">
@@ -113,6 +131,12 @@
 						Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. He's got style, a groovy style, and a car that just won't stop. When the going gets tough, he's really rough, with a Hong Kong Phooey chop (Hi-Ya!). Hong Kong Phooey, number one super guy. Hong Kong Phooey, quicker than the human eye. Hong Kong Phooey, he's fan-riffic!
 					</dd>
 				</dl>
+				<blockquote>
+					<p>Initialization</p>
+					<pre>
+						$('#js-smart-tabs').smartTabs();
+					</pre>
+				</blockquote>
 			</section>
 		</div>
 		<!-- FOOTER	-->
