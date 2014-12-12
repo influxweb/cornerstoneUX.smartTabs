@@ -1,8 +1,21 @@
-// cornerstoneUX.smartTabs Plugin
-// A jQuery plugin to control tab/accordion functions for, primarily, responsive sites.
-// version 2.0.0 :: 12/05/2014
-// by Matt Zimmermann
+/*
+                              __ ______      __             _     
+   _________ ___  ____ ______/ //_  __/___ _/ /_  _____    (_)____
+  / ___/ __ `__ \/ __ `/ ___/ __// / / __ `/ __ \/ ___/   / / ___/
+ (__  ) / / / / / /_/ / /  / /_ / / / /_/ / /_/ (__  )   / (__  ) 
+/____/_/ /_/ /_/\__,_/_/   \__//_/  \__,_/_.___/____(_)_/ /____/  
+                                                     /___/        
 
+A jQuery plug-in to control tab/accordion functions primarily for responsive sites.
+
+cornerstoneUX.smartTabs Plug-In
+Version: 2.0.0
+Author: Matt Zimmermann
+Website & Documentation: http://influxweb.github.io/cornerstoneUX.smartTabs/
+Repo: https://github.com/influxweb/cornerstoneUX.smartTabs
+Issues: https://github.com/influxweb/cornerstoneUX.smartTabs/issues
+License: MIT
+*/
 ;(function($){
 	if (!$.cornerstoneUX) {
 		$.cornerstoneUX = {};
